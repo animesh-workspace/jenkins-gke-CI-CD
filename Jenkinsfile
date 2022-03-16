@@ -18,7 +18,7 @@ pipeline {
     stages {
         stage('checkout') {
             steps {
-                checkout([$class: 'GitSCM', branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/animesh-workspace/hello-world-sample.git']]])
+                checkout([$class: 'GitSCM', branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/animesh-workspace/jenkins-gke-CI-CD.git']]])
             }
         }
         stage('maven build') {
