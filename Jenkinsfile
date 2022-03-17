@@ -6,7 +6,7 @@ pipeline {
         dockerImage = '' 
         tag = sh(returnStdout: true, script: "git rev-parse --short=4 HEAD").trim()
         PROJECT_ID = 'concrete-zephyr-343510'
-        CLUSTER_NAME = 'cluster-1'
+        CLUSTER_NAME = 'animesh-cluster-1'
         LOCATION = 'us-central1-c'
         CREDENTIALS_ID = 'kubernetes'
         
